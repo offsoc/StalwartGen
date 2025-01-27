@@ -1,0 +1,15 @@
+[package]
+name = "StalwartGen"
+version = "1.3.0"
+edition = "2021"
+resolver = "2"
+
+[dependencies]
+rand = "0.9.0" # Updated version
+ring = "0.17.0" # Existing version
+base64 = "0.22.1" # Existing version
+chrono = { version = "0.4.39", features = ["serde"] } # Add chrono dependency
+
+[[bin]]
+name = "StalwartGen"
+path = "src/enterprise/keygen.rs"
